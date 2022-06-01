@@ -1,0 +1,262 @@
+body {
+  background-color: #18181a;
+  font-family: 'Nunito', arial, sans-serif;
+}
+
+.title-text {
+  margin: 26px;
+  color: #fff;
+  font-size: 2em;
+}
+
+.get-location-btn {
+  color: white;
+  background-color: #0e0e0f;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.awaiting-api {
+  color: white;
+  margin: 10px;
+  font-size: 26px;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  -webkit-filter: drop-shadow(0px 0px 5px white);
+          filter: drop-shadow(0px 0px 5px white);
+}
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  -webkit-animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+          animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+@-webkit-keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+.weather-container {
+  background-color: #0e0e0f;
+  height: 500px;
+}
+
+.weather-icon {
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 15px;
+}
+
+.region {
+  color: #fff;
+  margin: 10px;
+  font-size: 26px;
+}
+
+.weather-btn {
+  background-color: #0e0e0f;
+  color: blue;
+}
+
+.weather-main {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.weather-temp {
+  position: relative;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-size: 18px;
+}
+
+.weather-temp-icon {
+  content: "\2103";
+  text-align: center;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 70px;
+  color: white;
+}
+
+.weather-temp-icon-ice {
+  -webkit-filter: drop-shadow(0px 0px 5px #fcfeff);
+          filter: drop-shadow(0px 0px 5px #fcfeff);
+}
+
+.weather-temp-icon-cold {
+  -webkit-filter: drop-shadow(0px 0px 5px #05cdff);
+          filter: drop-shadow(0px 0px 5px #05cdff);
+}
+
+.weather-temp-icon-cool {
+  -webkit-filter: drop-shadow(0px 0px 5px #00ffdd);
+          filter: drop-shadow(0px 0px 5px #00ffdd);
+}
+
+.weather-temp-icon-warm {
+  -webkit-filter: drop-shadow(0px 0px 5px #ffcb5a);
+          filter: drop-shadow(0px 0px 5px #ffcb5a);
+}
+
+.weather-temp-icon-hot {
+  -webkit-filter: drop-shadow(0px 0px 5px #ff8800);
+          filter: drop-shadow(0px 0px 5px #ff8800);
+}
+
+.weather-temp-icon-very-hot {
+  -webkit-filter: drop-shadow(0px 0px 5px red);
+          filter: drop-shadow(0px 0px 5px red);
+}
+
+.temp-section-break {
+  padding: 10px;
+}
+
+.findingLocation {
+  color: white;
+}
+
+.search-bar {
+  color: white;
+  margin: 30px 0px;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 40px;
+  padding-bottom: 100px;
+}
+
+.container .search {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 1;
+  right: -160px;
+  z-index: 68;
+}
+
+.container .search .search-icon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 14px;
+  color: #0e0e0f;
+  width: 14px;
+  height: 14px;
+  z-index: 7;
+  outline: none;
+}
+
+.container .search .search-icon:hover {
+  color: #0b6f72;
+  cursor: pointer;
+}
+
+.container input {
+  font-size: 14px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  color: black;
+  background-color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  z-index: 2;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  opacity: 0;
+  cursor: pointer;
+  cursor: text;
+  opacity: 1;
+  width: 190px;
+}
+
+.container input[type=text] {
+  padding-left: 10px;
+}
+
+.container input:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
